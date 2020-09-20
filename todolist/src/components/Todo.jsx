@@ -24,6 +24,7 @@ class Todo extends Component {
     const changeValue = this.state.items;
     if (changeValue.value !== "") {
       const item = [...this.state.item, changeValue];
+
       this.setState({
         item: item,
         items: {
@@ -31,7 +32,8 @@ class Todo extends Component {
           key: "",
         },
       });
-      this.input.current.focus();
+
+      this.nameInput.focus();
     }
   };
 
@@ -51,7 +53,9 @@ class Todo extends Component {
             id="inputText"
             onChange={this.changeHandler}
             value={this.state.items.value}
-            ref={this.input}
+            ref={(input) => {
+              this.nameInput = input;
+            }}
           />
           <button id="inputButton" onClick={this.clickHandler}>
             Add todo
