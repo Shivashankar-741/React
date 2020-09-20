@@ -35,6 +35,8 @@ class Todo extends Component {
     console.log(this.state.items.value, this.state.item);
   };
 
+  deleteHandler = () => {};
+
   render() {
     return (
       <div className="container">
