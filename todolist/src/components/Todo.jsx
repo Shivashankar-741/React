@@ -21,21 +21,25 @@ class Todo extends Component {
   };
 
   clickHandler = () => {
-    const changeValue = this.state.items.value;
-    const item = [...this.state.item, changeValue];
-
-    this.setState({
-      item: item,
-      items: {
-        value: "",
-        key: "",
-      },
-    });
-
-    console.log(this.state.items.value, this.state.item);
+    const changeValue = this.state.items;
+    if (changeValue.value !== "") {
+      const item = [...this.state.item, changeValue];
+      this.setState({
+        item: item,
+        items: {
+          value: "",
+          key: "",
+        },
+      });
+      this.input.current.focus();
+    }
   };
 
-  deleteHandler = () => {};
+  deleteHandler = (keyValue) => {
+    console.log("this list is deleted");
+    const changeItem = this.state.item.filter((item) => item.key !== keyValue);
+    this.setState({ item: changeItem });
+  };
 
   render() {
     return (
@@ -47,11 +51,12 @@ class Todo extends Component {
             id="inputText"
             onChange={this.changeHandler}
             value={this.state.items.value}
+            ref={this.input}
           />
           <button id="inputButton" onClick={this.clickHandler}>
             Add todo
           </button>
-          <Listitems />
+          <Listitems item={this.state.item} delete={this.deleteHandler} />
         </div>
       </div>
     );

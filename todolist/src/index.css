@@ -31,11 +31,38 @@ code {
   margin-right: 5px;
 }
 
-li {
-  display: flex;
-  justify-content: center;
-  margin-left: -36px;
-  margin-bottom: 10px;
-  list-style-type: none;
+.listitems {
   background-color: rgb(164, 131, 196);
+}
+.unorderlist {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 15px;
+  color: rgb(41, 29, 14);
+}
+span {
+  margin-right: 15px;
+  color: red;
+  cursor: pointer;
+}
+
+input {
+  padding: 8px 12px;
+  background-color: gainsboro;
+  border-radius: 5px;
+  border: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: rgb(68, 68, 124);
+  border-radius: 5px;
+  border: 10px;
+  cursor: pointer;
+  color: gainsboro;
 }
