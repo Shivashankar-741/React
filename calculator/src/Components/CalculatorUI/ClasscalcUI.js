@@ -12,8 +12,12 @@ class ClasscalUI extends Component {
     for (let i = 0; i < funcarr.length; i++) {
       if (funcarr[i] === "+" || "-" || "/" || "*") {
         const indexSym = funcarr.indexOf(funcarr[i]);
-        const one = parseInt(funcarr.slice(0, indexSym).reduce((a, b) => a + b, 0));
-        const two = parseInt(funcarr.slice(indexSym + 1).reduce((a, b) => a + b, 0));
+        const one = parseInt(
+          funcarr.slice(0, indexSym).reduce((a, b) => a + b, 0)
+        );
+        const two = parseInt(
+          funcarr.slice(indexSym + 1).reduce((a, b) => a + b, 0)
+        );
         if (funcarr[i] === "+") {
           console.log(one + two);
           this.setState({
@@ -61,58 +65,102 @@ class ClasscalUI extends Component {
   render() {
     console.log(this.state.arrVal);
     return (
-      <div className="flex flex-col justify-center	items-center">
-        <h1> calculator</h1>
-        <h1> UI</h1>
-        <h4>
-          {this.state.resarr}={this.state.totVal}
-        </h4>
-        <span className="cursor-pointer" onClick={() => this.addValue(0)}>
-          0
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue(1)}>
-          1
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue(2)}>
-          2
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue(3)}>
-          3
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue(4)}>
-          4
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue(5)}>
-          5
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue(6)}>
-          6
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue(7)}>
-          7
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue(8)}>
-          8
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue(9)}>
-          9
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue("+")}>
-          +
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue("-")}>
-          -
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue("*")}>
-          *
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue("/")}>
-          /
-        </span>
-        <span className="cursor-pointer" onClick={() => this.addValue("=")}>
-          =
-        </span>
-        <button onClick={() => this.setState({ arr: this.state.arr + 1 })}>clicked</button>
+      <div className="h-screen w-screen flex justify-center items-center ">
+        <div className="grid h-auto grid-rows-10 grid-columns-8 gap-10 bg-red-200 ">
+          <span className=" flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black">
+            {this.state.resarr}={this.state.totVal}
+          </span>
+          <span
+            className="cursor-pointer flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black  "
+            onClick={() => this.addValue(0)}
+          >
+            0
+          </span>
+          <span
+            className="cursor-pointer  flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black "
+            onClick={() => this.addValue(1)}
+          >
+            1
+          </span>
+          <span
+            className="cursor-pointer flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black"
+            onClick={() => this.addValue(2)}
+          >
+            2
+          </span>
+          <span
+            className="cursor-pointer  flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black"
+            onClick={() => this.addValue(3)}
+          >
+            3
+          </span>
+          <span
+            className="cursor-pointer  flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black"
+            onClick={() => this.addValue(4)}
+          >
+            4
+          </span>
+          <span
+            className="cursor-pointer  flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black"
+            onClick={() => this.addValue(5)}
+          >
+            5
+          </span>
+          <span
+            className="cursor-pointer  flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black"
+            onClick={() => this.addValue(6)}
+          >
+            6
+          </span>
+          <span
+            className="cursor-pointer  flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black"
+            onClick={() => this.addValue(7)}
+          >
+            7
+          </span>
+          <span
+            className="cursor-pointer flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black "
+            onClick={() => this.addValue(8)}
+          >
+            8
+          </span>
+          <span
+            className="cursor-pointer flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black"
+            onClick={() => this.addValue(9)}
+          >
+            9
+          </span>
+          <span
+            className="cursor-pointer flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black "
+            onClick={() => this.addValue("+")}
+          >
+            +
+          </span>
+          <span
+            className="cursor-pointer flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black "
+            onClick={() => this.addValue("-")}
+          >
+            -
+          </span>
+          <span
+            className="cursor-pointer flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black "
+            onClick={() => this.addValue("*")}
+          >
+            *
+          </span>
+          <span
+            className="cursor-pointer flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black "
+            onClick={() => this.addValue("/")}
+          >
+            /
+          </span>
+          <span
+            className="cursor-pointer flex justify-center items-center bg-gray-600 border-solid border-4 border-gray-600 bg-black"
+            onClick={() => this.addValue("=")}
+          >
+            =
+          </span>
+        </div>
       </div>
     );
   }
