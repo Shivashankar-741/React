@@ -25,13 +25,13 @@ class Todo extends Component {
     if (changeValue.value !== "") {
       const item = [...this.state.item, changeValue];
 
-      // this.setState({
-      //   item: item,
-      //   items: {
-      //     value: "",
-      //     key: "",
-      //   },
-      // });
+      this.setState({
+        item: item,
+        items: {
+          value: "",
+          key: "",
+        },
+      });
 
       this.nameInput.focus();
     }
