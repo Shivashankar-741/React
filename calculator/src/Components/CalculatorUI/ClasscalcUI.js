@@ -12,12 +12,8 @@ class ClasscalUI extends Component {
     for (let i = 0; i < funcarr.length; i++) {
       if (funcarr[i] === "+" || "-" || "/" || "*") {
         const indexSym = funcarr.indexOf(funcarr[i]);
-        const one = parseInt(
-          funcarr.slice(0, indexSym).reduce((a, b) => a + b, 0)
-        );
-        const two = parseInt(
-          funcarr.slice(indexSym + 1).reduce((a, b) => a + b, 0)
-        );
+        const one = parseInt(funcarr.slice(0, indexSym).reduce((a, b) => a + b, 0));
+        const two = parseInt(funcarr.slice(indexSym + 1).reduce((a, b) => a + b, 0));
         if (funcarr[i] === "+") {
           console.log(one + two);
           this.setState({
