@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.height-30 {
+  height: 40vh;
+}

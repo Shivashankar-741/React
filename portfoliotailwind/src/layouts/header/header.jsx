@@ -1,10 +1,24 @@
 import React from "react";
+import Icons from "../../components/icons/icons";
 
 const Header = () => {
   return (
-    <div className="bg-meroon-100 h-screen">
-      <h1 className=" h-screen flex justify-center items-center">Hello</h1>
-    </div>
+    <header className=" font-sans height-30 bg-gradient-to-r from-gray-600  to-gray-400">
+      <div className="flex justify-around py-12 ">
+        <div>
+          <h1 className="text-gray-700 font-extrabold text-5xl tracking-wide">Shiva shankar</h1>
+          <h5 className="text-2xl pt-1 text-gray-400 font-light tracking-wide">
+            Web & Mobile Developer
+          </h5>
+          <Icons />
+        </div>
+        <div>
+          <button className="bg-blue-400 px-3 py-2 text-white font-semibold rounded">
+            Check My Blog
+          </button>
+        </div>
+      </div>
+    </header>
   );
 };
 

@@ -19314,6 +19314,10 @@ video {
   animation: bounce 1s infinite;
 }
 
+.height-30 {
+  height: 40vh;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
