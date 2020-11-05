@@ -1,7 +1,11 @@
+import Header from "./layouts/header/header";
+import Hero from "./layouts/hero/hero";
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="bg-black">Hello</h1>
+    <div>
+      <Header />
+      <Hero />
     </div>
   );
 }
