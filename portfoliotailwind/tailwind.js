@@ -10,11 +10,30 @@ module.exports = {
   separator: ":",
   presets: [],
   theme: {
+    // screens: {
+    //   sm: "300px",
+    //   md: "768px",
+    //   lg: "1024px",
+    //   xl: "1280px",
+    // },
+    // screens: {
+    //   sm: { min: "640px", max: "767px" },
+    //   md: { min: "768px", max: "1023px" },
+    //   lg: { min: "1024px", max: "1279px" },
+    //   xl: { min: "1280px" },
+    // },
     screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
+      xl: { min: "1100px" },
+      // => @media (max-width: 1279px) { ... }
+
+      lg: { max: "1093px" },
+      // => @media (max-width: 1023px) { ... }
+
+      md: { max: "769px" },
+      // => @media (max-width: 767px) { ... }
+
+      sm: { max: "580px" },
+      // => @media (max-width: 639px) { ... }
     },
     colors: {
       transparent: "transparent",
@@ -23,8 +42,16 @@ module.exports = {
       black: "#000",
       white: "#fff",
 
-      meroon: {
-        100: "#314F60",
+      primary: {
+        100: "#3aafa9",
+      },
+      heading: {
+        100: "#17252a",
+        200: "#feffff",
+      },
+      pfonts: {
+        100: "#2b7a78",
+        200: "#def2f1",
       },
 
       gray: {
