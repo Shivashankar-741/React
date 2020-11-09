@@ -1,142 +1,164 @@
 import React from "react";
 import { HiLocationMarker } from "react-icons/hi";
 import { MdCall } from "react-icons/md";
+import { FiMail } from "react-icons/fi";
 
 const Hero = () => {
   return (
-    <main className="mt-10 mx-auto">
+    <main className="mt-10 mx-auto mb-4">
       <div className="mx-auto w-11/12 mt-10">
         <div
           className="
-          xl:grid xl:grid-cols-10 xl:grid-rows-6
-          lg:grid lg:grid-cols-10 lg:grid-rows-6
-          md:grid md:grid-cols-7 md:grid-rows-8
-          sm:grid sm:grid-cols-7 sm:grid-rows-8
+          xl:grid xl:grid-cols-10 xl:grid-rows-8
+          lg:grid lg:grid-cols-10 lg:grid-rows-8
+          md:grid md:grid-cols-7 md:grid-rows-23
+          sm:grid sm:grid-cols-7 sm:grid-rows-23
         "
         >
           <div
             className="bg-secondary-100 rounded-lg  
-            xl:col-start-1 xl:col-span-7 xl:row-start-1 xl:row-span-6
-            lg:col-start-1 lg:col-span-7 lg:row-start-1 lg:row-span-6
+            xl:col-start-1 xl:col-span-7 xl:row-start-1 xl:row-span-full
+            lg:col-start-1 lg:col-span-7 lg:row-start-1 lg:row-span-full
+            sm:col-start-1 sm:col-span-7 sm:row-start-1 sm:row-span-12 sm:mb-4
+            md:col-start-1 md:col-span-7 md:row-start-1 md:row-span-12 md:mb-4
            
           "
-          ></div>
+          >
+            <h1 className="text-heading-100 font-bold text-3xl tracking-wide p-5">About Me👨‍💻</h1>
+            <h3 className="px-4 text-2xl text-gray-700 font-light">
+              Hi 👋, I'm Shiva shankar Front End Developer
+            </h3>
+
+            <p className="p-4 text-lg text-gray-700 font-light">
+              I'm a front end Developer specialized in frontend and UX design 🛠. I have been
+              developing cool applications for last 6 months. I write scalable and optimized code.
+              Sometimes I do write blogs related to developement, data structures and algorithms. Do
+              check out if your interested. Currently I'm 🤓 focused in Javascript and it's
+              libraries and frameworks. You can ping me to discuss about how to write scalable
+              javacript code or anything else related to JS.
+            </p>
+
+            <p className="p-4 text-lg text-gray-700 font-light">
+              Currently i'm doing prefinal year of my bachelor's degree 👨‍🎓{" "}
+              <span className="text-black font-semibold">2018-2022</span>. Apart from academics, I
+              would like to work with like minded peoples and solving problems. lets ping me for
+              colab and I'm interested to work with other developers.
+            </p>
+            <div className="p-4">
+              <h3 className="bg-gray-600 inline font-semibold text-lg">Spare time 🕵🏼</h3>
+              <p className="p-4 text-lg text-gray-800 font-light">
+                I like to write blogs and doing projects. Apart from I watch youtube videos
+                relatable to my projects{" "}
+              </p>
+            </div>
+            <div className="p-4">
+              <h3 className="bg-gray-600 inline font-semibold text-lg">Academics 📚 </h3>
+              <p className="p-4 text-lg text-gray-800 font-light">
+                I'm studying prefinal year in Rajalakshmi Engineering College, Chennai. Currently
+                I'm having 8.2 cgpa in my academics
+              </p>
+            </div>
+          </div>
+
           <div
             className="bg-secondary-100 rounded-lg
             xl:col-start-9 xl:col-span-3 xl:row-start-1 xl:row-span-2
             lg:col-start-9 lg:col-span-3 lg:row-start-1 lg:row-span-2
+            md:col-start-1 md:col-span-7 md:row-start-13 md:row-span-3 md:mb-4
+            sm:col-start-1 sm:col-span-7 sm:row-start-13 sm:row-span-3 sm:mb-4
+
           "
-          ></div>
+          >
+            <h1 className="flex justify-center text-heading-100 p-2 font-bold text-3xl tracking-wide">
+              Contact
+            </h1>
+            <div className="ml-12">
+              <div>
+                <div className="flex items-center px-4 py-2">
+                  <HiLocationMarker className="" />
+                  <h4 className="px-6 font-light text-2xl tracking-wide ">Chennai, India</h4>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center px-4 py-2">
+                  <MdCall />
+                  <h4 className="px-6 font-light text-lg tracking-wide">+91 7418940850</h4>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center px-4 py-1">
+                  <FiMail />
+                  <h4 className="px-6 font-light text-lg tracking-wide">shiva1894300@gmail.com</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div
             className="bg-secondary-100 rounded-lg
-          xl:col-start-9 xl:col-span-3 xl:row-start-4 xl:row-span-3
-          lg:col-start-9 lg:col-span-3 lg:row-start-4 lg:row-span-3
+          xl:col-start-9 xl:col-span-3 xl:row-start-4 xl:row-span-5
+          lg:col-start-9 lg:col-span-3 lg:row-start-4 lg:row-span-5
+          md:col-start-1 md:col-span-7 md:row-start-16 md:row-span-8 md:mb-4
+          sm:col-start-1 sm:col-span-7 sm:row-start-16 sm:row-span-8 sm:mb-4
+
           "
-          ></div>
+          >
+            <h1 className="flex justify-center text-heading-100 p-4 font-bold text-3xl tracking-wide">
+              Skills
+            </h1>
+            <p className="px-6 py-2 text-lg text-gray-700 font-light">
+              I have learned and used wide range of programming languages and technologies. I listed
+              below the technologies I've expertised with these technologies.
+            </p>
+            <div className="px-6 py-2">
+              <div className="p-4">
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">HTML</span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">CSS</span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">SASS</span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">
+                  Javascript
+                </span>
+              </div>
+              <div className="p-4">
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">
+                  bootstrap
+                </span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">
+                  Tailwind CSS
+                </span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">SASS</span>
+              </div>
+              <div className="p-4">
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">React</span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">
+                  Nodejs
+                </span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">Git</span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">
+                  Javascript
+                </span>
+              </div>
+
+              <div className="py-6 px-4 text-lg text-gray-800 font-light">
+                <p>
+                  I have a good knowledge in above technologies and looking forward to work with
+                  other developers.
+                </p>
+                <p className="pt-4">
+                  <a
+                    href="mailto:shiva1894300@gmail.com?subject = Feedback&body = Message"
+                    className="bg-blue-300 px-2 py-1 rounded"
+                  >
+                    Hire me
+                  </a>{" "}
+                  I can do my task as smart as I can.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-    // <div className="mt-10  ">
-    //   <div
-    //     className=" lg:grid lg:grid-cols-13 lg:grid-rows-10
-    //     xl:grid xl:grid-cols-12 xl:grid-rows-10
-    //     md:grid md:grid-cols-6 md:grid-rows-4
-    //     sm:grid sm:grid-cols-4 sm:grid-rows-4
-    //   "
-    //   >
-    //     <div
-    //       className="bg-secondary-100 px-4 rounded-lg
-    //        lg:col-start-2 lg:col-span-6 lg:row-span-6
-    //        xl:col-start-2 xl:col-span-6 xl:row-span-6
-    //        md:row-start-1 md:row-span-1 md:col-start-0 md:col-span-11
-    //        sm:row-start-1 sm:row-span-1 sm:col-start-0 sm:col-span-11
-    //     "
-    //     >
-    //       <h1 className="py-5 text-4xl italic font-bold tracking-wide text-heading-100">
-    //         About me
-    //       </h1>
-    //       <p className=" text-gray-700 pt-2 font-semibold">
-    //         Hi, I'm Shiva shankar Front End developer,
-    //       </p>
-    //       <p className=" text-gray-700 pt-8">
-    //         I'm a student, currently studying the prefinal year of my bachelor's degree. I'm looking
-    //         forward to do work with like minded peoples. I have started my web developement carrier
-    //         when the quarantine and now it's become my passion and I decided to move forward to this
-    //         industry. In over the six months I did amazon clone , it gave so much confidence to
-    //         build my projects so well. Currently I'm focused in Javascript and it's libraries and
-    //         frameworks. You can ping me to discuss about how to write scalable javacript code or
-    //         anything else related to JS.
-    //       </p>
-
-    //       <p className=" text-gray-700 pt-8">
-    //         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nobis aspernatur
-    //         dignissimos laborum, architecto sapiente iure impedit molestiae natus ex.
-    //       </p>
-
-    //       <div className="md:row-start-4 md:row-span-1 md:col-start-0 md:col-span-11  md:mt-4">
-    //         <h4 className="py-5 text-2xl italic font-bold tracking-wide text-heading-100">
-    //           Opportunity
-    //         </h4>
-    //         <p className=" text-gray-700 pb-6">
-    //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cum ea quisquam
-    //           quasi officia doloremque cupiditate praesentium quidem reprehenderit maiores eaque!
-    //           Reiciendis, sit vel atque nostrum delectus consequuntur est dolorem quis enim numquam
-    //           repellat quasi at unde molestias adipisci harum. Lorem ipsum dolor sit amet
-    //           consectetur adipisicing elit. Quaerat similique ducimus, sint totam beatae aperiam
-    //           nihil laboriosam accusamus explicabo perferendis blanditiis eligendi quia quisquam
-    //           placeat enim vel illum commodi exercitationem dolore harum magnam non eaque sunt sed.
-    //           Et corporis optio nam harum ducimus similique maiores nisi, sapiente ex, pariatur
-    //           architecto!
-    //         </p>
-    //       </div>
-    //     </div>
-
-    //     <div
-    //       className="bg-secondary-100   rounded-lg p-6
-    //       lg:col-start-9 lg:col-span-3 lg:row-span-4
-    //       xl:col-start-9 xl:col-span-3 xl:row-span-4
-    //       md:row-start-2 md:row-span-1 md:col-start-0 md:col-span-11  md:mt-4
-    //     "
-    //     >
-    //       <h1>lorem5</h1>
-    //       <p>
-    //         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam provident ut
-    //         molestiae itaque quisquam minima repellendus adipisci optio vitae labore? Dignissimos
-    //         nihil quos tenetur. Tempore natus sit distinctio quidem odit!
-    //       </p>
-    //       <p>
-    //         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eaque est odit fuga
-    //         repellendus nihil aliquid mollitia rem, minus, reiciendis quis assumenda sunt minima
-    //         corporis distinctio quibusdam blanditiis? Tenetur, deserunt!
-    //       </p>
-    //       <p>
-    //         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, alias quod.
-    //         Distinctio, inventore quasi voluptatibus impedit cum molestias quod dolorem.
-    //       </p>
-    //     </div>
-    //     <div
-    //       className="bg-secondary-100 rounded-lg
-    //       lg:col-start-9 lg:col-span-3 lg:row-start-6 lg:row-span-1
-    //       xl:col-start-9 xl:col-span-3 xl:row-start-6 xl:row-span-1
-    //       md:row-start-3 md:row-span-1 md:col-start-1 md:col-span-5 mt-4
-
-    //     "
-    //     >
-    //       <div className="flex py-5 px-4 ">
-    //         <HiLocationMarker size="3em" color="#17252a" />
-    //         <h2 className=" ml-4 flex items-center text-2xl italic font-bold tracking-wide text-heading-100 ">
-    //           Chennai, India
-    //         </h2>
-    //       </div>
-    //       <div className="flex items-center py-2 px-6  ">
-    //         <MdCall size="2em" color="#17252a" className=" " />
-    //         <h2 className=" ml-4 flex items-center  italic font-semibold tracking-wide text-heading-100 ">
-    //           7418940850
-    //         </h2>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

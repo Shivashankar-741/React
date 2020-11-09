@@ -8,7 +8,7 @@ const Icons = () => {
   return (
     <IconContext.Provider value={{ color: "#def2f1", size: "2em" }}>
       <ul className="flex pt-6">
-        <li className="">
+        <li className="pr-3">
           <a href="https://github.com/Shivashankar741">
             <FaGithub />
           </a>
