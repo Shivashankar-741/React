@@ -16,7 +16,7 @@ const Hero = () => {
         "
         >
           <div
-            className="bg-secondary-100 rounded-lg  
+            className="bg-secondary-100 rounded-lg overflow-auto
             xl:col-start-1 xl:col-span-7 xl:row-start-1 xl:row-span-full
             lg:col-start-1 lg:col-span-7 lg:row-start-1 lg:row-span-full
             sm:col-start-1 sm:col-span-7 sm:row-start-1 sm:row-span-12 sm:mb-4
@@ -95,7 +95,7 @@ const Hero = () => {
           </div>
 
           <div
-            className="bg-secondary-100 rounded-lg
+            className="bg-secondary-100 rounded-lg overflow-auto
           xl:col-start-9 xl:col-span-3 xl:row-start-4 xl:row-span-5
           lg:col-start-9 lg:col-span-3 lg:row-start-4 lg:row-span-5
           md:col-start-1 md:col-span-7 md:row-start-16 md:row-span-8 md:mb-4
@@ -111,35 +111,47 @@ const Hero = () => {
               below the technologies I've expertised with these technologies.
             </p>
             <div className="px-6 py-2">
-              <div className="p-4">
-                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">HTML</span>
-                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">CSS</span>
-                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">SASS</span>
-                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">
+              <div className="p-4 sm:flex sm:flex-col ">
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white sm:mb-2">
+                  HTML
+                </span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white sm:mb-2">
+                  CSS
+                </span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white sm:mb-2">
+                  SASS
+                </span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white sm:mb-2">
                   Javascript
                 </span>
               </div>
-              <div className="p-4">
-                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">
+              <div className="p-4 sm:flex sm:flex-col ">
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white sm:mb-2">
                   bootstrap
                 </span>
-                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white sm:mb-2">
                   Tailwind CSS
                 </span>
-                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">SASS</span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white sm:mb-2">
+                  SASS
+                </span>
               </div>
-              <div className="p-4">
-                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">React</span>
-                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">
+              <div className="p-4  sm:flex sm:flex-col">
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white sm:mb-2">
+                  React
+                </span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white sm:mb-2">
                   Nodejs
                 </span>
-                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">Git</span>
-                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white">
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white sm:mb-2">
+                  Git
+                </span>
+                <span className="px-6 text-lg bg-gray-800 inline-block mx-2 text-white sm:mb-2">
                   Javascript
                 </span>
               </div>
 
-              <div className="py-6 px-4 text-lg text-gray-800 font-light">
+              <div className="py-6 px-4 text-lg text-gray-800 font-light ">
                 <p>
                   I have a good knowledge in above technologies and looking forward to work with
                   other developers.
