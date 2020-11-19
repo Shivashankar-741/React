@@ -71,7 +71,7 @@ class Layout extends Component {
             text-4xl text-white
         "
 					>
-						{this.state.result} =={this.state.arr}
+						{this.state.result} {this.state.arr}
 					</div>
 
 					<div
