@@ -1,7 +1,10 @@
+import "./App.css";
+import AppLayer from "./components/appLayer/appLayer";
+
 function App() {
 	return (
 		<div className="App">
-			<h1>weatherapp</h1>
+			<AppLayer />
 		</div>
 	);
 }

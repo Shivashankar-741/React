@@ -1,0 +1,28 @@
+.AppLayer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.AppLayer__layer {
+	background-color: #fff;
+
+	display: grid;
+	grid-template-columns: repeat(6, 150px);
+	grid-template-rows: repeat(3, 200px);
+}
+.image {
+	grid-column: 1 / span 3;
+	grid-row: 1 / span 3;
+
+	height: 100%;
+	width: 100%;
+}
+
+.Inputform {
+	grid-column: 4 / span 3;
+	grid-row: 1 / span 3;
+
+	background-color: rgb(70, 39, 70);
+}
