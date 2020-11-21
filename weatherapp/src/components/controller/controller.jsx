@@ -6,6 +6,27 @@ class Controller extends Component {
 		searchValue: "",
 	};
 
+	getWeather = (woeid) => {
+		fetch(
+			`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${woeid}`
+		)
+			.then((result) => {
+				// console.log(result);
+				return result.json();
+			})
+			.then((data) => {
+				// console.log(data);
+				if (data.length) {
+					data.forEach((el) => {
+						console.log(el.title, el.woeid);
+					});
+				} else {
+					console.log("data not found");
+				}
+			})
+			.catch((error) => console.log(error));
+	};
+
 	changeValue = (e) => {
 		this.setState({
 			searchValue: e.target.value,
@@ -15,8 +36,10 @@ class Controller extends Component {
 	enterPressed = (e) => {
 		var code = e.keyCode || e.which;
 		if (code === 13 && this.state.searchValue.length >= 2) {
-			console.log(this.state.searchValue);
+			let countryName = this.state.searchValue;
+			console.log(countryName);
 			e.target.value = "";
+			this.getWeather(countryName);
 		}
 	};
 
