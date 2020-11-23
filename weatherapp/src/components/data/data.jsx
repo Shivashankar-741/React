@@ -2,7 +2,7 @@ import React from "react";
 import "./data.css";
 
 const Data = (props) => {
-	props.data.length = 2;
+	props.data.length = 1;
 	console.log(props.notfound);
 
 	return (
@@ -10,8 +10,9 @@ const Data = (props) => {
 			{props.data.map((el, index) => {
 				return (
 					<div div key={index + 1} className="box">
-						<h2 key={index + 5}>Weather for {el.applicable_date}</h2>
-						<h3>{props.notfound}</h3>
+						<h2 key={index + 5}>
+							Weather for today <small>{el.applicable_date}</small>
+						</h2>
 						<h3>
 							<span>Country :</span>
 							{props.country}

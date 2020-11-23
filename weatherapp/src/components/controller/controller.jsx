@@ -44,7 +44,7 @@ class Controller extends Component {
 						dataValue: [],
 						country: "",
 						title: "",
-						notfound: "Data not found try another country",
+						notfound: "Data not found try another country/city",
 					});
 				}
 			})
