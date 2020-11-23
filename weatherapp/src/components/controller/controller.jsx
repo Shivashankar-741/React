@@ -33,6 +33,7 @@ class Controller extends Component {
 									dataValue: data.consolidated_weather,
 									title: data.title,
 									country: data.parent.title,
+									notfound: "",
 								});
 							})
 							.catch((error) => console.log(error));

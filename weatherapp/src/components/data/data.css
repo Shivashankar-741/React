@@ -1,3 +1,20 @@
-.Output {
-	overflow-y: scroll;
+.box {
+	color: white;
+	padding: 20px 60px;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin: 15px;
+}
+
+.notfound {
+	padding: 20px;
+	color: aliceblue;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.box h2 {
+	padding: 10px;
+}
+span {
+	padding-right: 35px;
 }

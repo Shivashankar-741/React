@@ -2,22 +2,41 @@ import React from "react";
 import "./data.css";
 
 const Data = (props) => {
-	console.log(props);
+	props.data.length = 2;
+	console.log(props.notfound);
 
 	return (
 		<div className="Output">
 			{props.data.map((el, index) => {
 				return (
-					<div key={index + 1}>
-						<h2>{props.notfound}</h2>
-						<h2>Country:{props.country}</h2>
-						<h2>City:{props.title}</h2>
-						<h2 key={index + 2}>Weather :{el.weather_state_name}</h2>
-						<h2 key={index + 3}> Date :{el.applicable_date}</h2>
-						<h2 key={index + 4}>Temperature :{el.the_temp} 'C</h2>
+					<div div key={index + 1} className="box">
+						<h2 key={index + 5}>Weather for {el.applicable_date}</h2>
+						<h3>{props.notfound}</h3>
+						<h3>
+							<span>Country :</span>
+							{props.country}
+						</h3>
+						<h3>
+							<span>City:</span>
+							{props.title}
+						</h3>
+						<h3 key={index + 2}>
+							<span>Weather :</span>
+							{el.weather_state_name}
+						</h3>
+						<h3 key={index + 3}>
+							{" "}
+							<span>Date :</span>
+							{el.applicable_date}
+						</h3>
+						<h3 key={index + 4}>
+							<span>Temperature :</span>
+							{el.the_temp} 'C
+						</h3>
 					</div>
 				);
 			})}
+			<h1 className="notfound">{props.notfound}</h1>
 		</div>
 	);
 };
