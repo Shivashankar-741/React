@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/React/portfoliotailwind/static/css/main.a5d4a1f7.chunk.css",
-    "main.js": "/React/portfoliotailwind/static/js/main.43fc40e8.chunk.js",
-    "main.js.map": "/React/portfoliotailwind/static/js/main.43fc40e8.chunk.js.map",
+    "main.css": "/React/portfoliotailwind/static/css/main.e2e031a0.chunk.css",
+    "main.js": "/React/portfoliotailwind/static/js/main.4b70ac35.chunk.js",
+    "main.js.map": "/React/portfoliotailwind/static/js/main.4b70ac35.chunk.js.map",
     "runtime-main.js": "/React/portfoliotailwind/static/js/runtime-main.b0c4ebf0.js",
     "runtime-main.js.map": "/React/portfoliotailwind/static/js/runtime-main.b0c4ebf0.js.map",
     "static/js/2.6bf8fbab.chunk.js": "/React/portfoliotailwind/static/js/2.6bf8fbab.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.2a80cc5b.chunk.js": "/React/portfoliotailwind/static/js/3.2a80cc5b.chunk.js",
     "static/js/3.2a80cc5b.chunk.js.map": "/React/portfoliotailwind/static/js/3.2a80cc5b.chunk.js.map",
     "index.html": "/React/portfoliotailwind/index.html",
-    "static/css/main.a5d4a1f7.chunk.css.map": "/React/portfoliotailwind/static/css/main.a5d4a1f7.chunk.css.map",
+    "static/css/main.e2e031a0.chunk.css.map": "/React/portfoliotailwind/static/css/main.e2e031a0.chunk.css.map",
     "static/js/2.6bf8fbab.chunk.js.LICENSE.txt": "/React/portfoliotailwind/static/js/2.6bf8fbab.chunk.js.LICENSE.txt",
     "static/media/userImage.6a3ddcf3.jpg": "/React/portfoliotailwind/static/media/userImage.6a3ddcf3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b0c4ebf0.js",
     "static/js/2.6bf8fbab.chunk.js",
-    "static/css/main.a5d4a1f7.chunk.css",
-    "static/js/main.43fc40e8.chunk.js"
+    "static/css/main.e2e031a0.chunk.css",
+    "static/js/main.4b70ac35.chunk.js"
   ]
 }
