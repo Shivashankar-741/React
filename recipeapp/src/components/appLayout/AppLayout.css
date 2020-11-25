@@ -1,0 +1,8 @@
+.app-container {
+	/* background-color: aquamarine; */
+	margin: auto;
+	width: 80%;
+	height: 100vh;
+	color: #fff;
+	background-color: #333;
+}
