@@ -1,8 +1,40 @@
 .app-container {
 	/* background-color: aquamarine; */
-	margin: auto;
-	width: 80%;
-	height: 100vh;
+	margin: 2% auto;
+	width: 90%;
+	/* height: 100vh; */
 	color: #fff;
 	background-color: #333;
+	/* color: aquamarine; */
+}
+
+.header h1 {
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+.header-input {
+	padding: 30px 0px 0px 40px;
+	margin-bottom: 15px;
+}
+
+.input-field {
+	margin-top: 15px;
+}
+input {
+	width: 85%;
+	background-color: rgba(197, 192, 192, 0.2);
+	padding: 10px 10px;
+	border-radius: 2px;
+	border: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+input::placeholder {
+	font-size: 14px;
+	color: grey;
+	font-style: italic;
 }

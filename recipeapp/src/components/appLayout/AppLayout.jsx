@@ -39,18 +39,22 @@ const AppLayout = () => {
 
 	return (
 		<div className="app-container">
-			<div className="header">
-				<h1>Recipe</h1>
+			<div className="header-input">
+				<div className="header">
+					<h1>Recipes</h1>
+				</div>
+				<div className="input-field">
+					<input
+						className="search-recipe"
+						type="text"
+						onChange={changeHandler}
+						onKeyPress={enterPressed}
+						placeholder="Search your recipe..."
+					/>
+				</div>
 			</div>
-			<input
-				className="search-recipe"
-				type="text"
-				onChange={changeHandler}
-				onKeyPress={enterPressed}
-			/>
-			<div className="cards">
-				<Cards inputValue={data} />
-			</div>
+
+			<Cards inputValue={data} />
 		</div>
 	);
 };
