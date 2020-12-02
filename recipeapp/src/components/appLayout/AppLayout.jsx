@@ -19,7 +19,7 @@ const AppLayout = () => {
 			const APP_ID = "4c8e9f7b";
 			const APP_KEY = "e8f4960651f0c61be77bc1173093e860";
 
-			const URL = `https://api.edamam.com/search?q=${change}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=10`;
+			const URL = `https://api.edamam.com/search?q=${change}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=12`;
 
 			fetch(URL)
 				.then((response) => {
