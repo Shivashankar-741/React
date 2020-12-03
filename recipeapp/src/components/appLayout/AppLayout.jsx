@@ -37,6 +37,7 @@ const AppLayout = () => {
 				})
 				.catch((err) => {
 					console.log(err);
+					setLoading(false);
 				});
 		}
 	};
@@ -55,6 +56,7 @@ const AppLayout = () => {
 			})
 			.catch((err) => {
 				console.log(err);
+				setLoading(false);
 			});
 	}, []);
 
