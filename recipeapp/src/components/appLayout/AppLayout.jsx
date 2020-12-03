@@ -57,7 +57,7 @@ const AppLayout = () => {
 		<div className="app-container">
 			<div className="header-input">
 				<div className="header">
-					<h1>Recipe</h1>
+					<h1>RecipeFinder</h1>
 				</div>
 				<div className="input-field">
 					<input
