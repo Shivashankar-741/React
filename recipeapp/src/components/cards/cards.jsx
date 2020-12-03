@@ -6,31 +6,17 @@ const Cards = (prop) => {
 
 	return (
 		<ul className="cards">
-			{prop.inputValue.map((el) => (
-				<li className="cards_item">
+			{prop.inputValue.map((el, ind) => (
+				<li className="cards_item" key={ind}>
 					<div className="card">
 						<div className="card_image">
 							<img className="card_imageIn" src={el.recipe.image} alt="" />
 						</div>
 					</div>
 				</li>
-			))} 
+			))}
 		</ul>
 	);
 };
 
 export default Cards;
-
-{
-	//
-	/* <div className="card">
-	<div className="card_image">
-		<img src={el.recipe.image} alt="" />
-	</div>
-	<div className="card_content">
-		<h2 className="card_title">{el.recipe.label}</h2>
-		<p className="card_text">{el.recipe.label}</p>
-		<button className="btn card_btn">Read More</button>
-	</div>
-</div>; */
-}

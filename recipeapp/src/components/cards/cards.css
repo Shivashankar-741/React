@@ -91,22 +91,17 @@ img {
 
 .cards_item {
 	list-style-type: none;
-
-	/* 
-	height: 310px;
-	width: 250px;
-	background-color: rgba(136, 129, 129, 0.3);
-	border-radius: 10px; */
 }
 
 .card_imageIn {
 	width: 250px;
 	height: 200px;
-	object-fit: cover;
+	z-index: -1;
+	object-fit: fill;
 }
 
 .cards_item {
-	margin: 20px;
+	margin: 12px;
 }
 
 .card {
@@ -114,6 +109,4 @@ img {
 	width: 250px;
 	background-color: rgba(136, 129, 129, 0.3);
 	border-radius: 10px;
-
-	border-radius: 7px;
 }

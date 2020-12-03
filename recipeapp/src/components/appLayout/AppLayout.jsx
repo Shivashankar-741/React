@@ -3,6 +3,9 @@ import Cards from "../cards/cards";
 import "./AppLayout.css";
 
 const AppLayout = () => {
+	const APP_ID = "4c8e9f7b";
+	const APP_KEY = "e8f4960651f0c61be77bc1173093e860";
+
 	const [change, setchange] = useState("");
 	const [data, setData] = useState([]);
 
@@ -16,10 +19,7 @@ const AppLayout = () => {
 			console.log(change);
 			e.target.value = "";
 
-			const APP_ID = "4c8e9f7b";
-			const APP_KEY = "e8f4960651f0c61be77bc1173093e860";
-
-			const URL = `https://api.edamam.com/search?q=${change}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=12`;
+			const URL = `https://api.edamam.com/search?q=${change}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=20`;
 
 			fetch(URL)
 				.then((response) => {
@@ -36,6 +36,22 @@ const AppLayout = () => {
 				});
 		}
 	};
+
+	React.useEffect(() => {
+		const URL = `https://api.edamam.com/search?q=mutton&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=20`;
+
+		fetch(URL)
+			.then((response) => {
+				console.log(response);
+				return response.json();
+			})
+			.then((result) => {
+				setData(result.hits);
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+	}, []);
 
 	return (
 		<div className="app-container">
