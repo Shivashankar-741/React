@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Cards from "../cards/cards";
 import "./AppLayout.css";
+import Loader from "react-loader-spinner";
 
 const AppLayout = () => {
 	const APP_ID = "4c8e9f7b";
@@ -8,6 +9,7 @@ const AppLayout = () => {
 
 	const [change, setchange] = useState("");
 	const [data, setData] = useState([]);
+	const [loading, setLoading] = useState(true);
 
 	const changeHandler = (e) => {
 		setchange(e.target.value);
@@ -15,10 +17,11 @@ const AppLayout = () => {
 
 	const enterPressed = (e) => {
 		let keycode = e.keyCode || e.which;
-		if (keycode === 13) {
+		if (keycode === 13 && change !== "") {
+			setData([]);
+			setLoading(true);
 			console.log(change);
 			e.target.value = "";
-
 			const URL = `https://api.edamam.com/search?q=${change}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=20`;
 
 			fetch(URL)
@@ -30,6 +33,7 @@ const AppLayout = () => {
 					console.log(result);
 					console.log(result.hits);
 					setData(result.hits);
+					setLoading(false);
 				})
 				.catch((err) => {
 					console.log(err);
@@ -38,7 +42,7 @@ const AppLayout = () => {
 	};
 
 	React.useEffect(() => {
-		const URL = `https://api.edamam.com/search?q=mutton&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=20`;
+		const URL = `https://api.edamam.com/search?q=mutton&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=24`;
 
 		fetch(URL)
 			.then((response) => {
@@ -47,6 +51,7 @@ const AppLayout = () => {
 			})
 			.then((result) => {
 				setData(result.hits);
+				setLoading(false);
 			})
 			.catch((err) => {
 				console.log(err);
@@ -70,7 +75,17 @@ const AppLayout = () => {
 				</div>
 			</div>
 
-			<Cards inputValue={data} />
+			{loading ? (
+				<Loader
+					className="loader"
+					type="ThreeDots"
+					color="#00BFFF"
+					height={100}
+					width={100}
+				/>
+			) : (
+				<Cards inputValue={data} />
+			)}
 		</div>
 	);
 };
