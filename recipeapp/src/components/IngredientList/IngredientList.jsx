@@ -31,30 +31,3 @@ const IngredientList = (props) => {
 };
 
 export default IngredientList;
-
-// <div className="IngredientList">
-// 	{[props.location.data].map((elem, idx) => (
-// 		<div className="IngredientList-container" key={idx}>
-// 			<div className="ingredientList-image-container">
-// 				<img src={elem.image} alt="" className="ingredient-image" />
-// 			</div>
-// 			<div className="IngredientList-ingredients">
-// 				<h1>Ingredients</h1>
-// 				<div className="IngredientList-cards">
-// 					{elem.ingredients.map((el, ind) => (
-// 						<div className="inner-card">
-// 							<div className="inner-card-img">
-// 								<img src={el.image} alt="" className="card-img" />
-// 							</div>
-// 							<div className="inner-card-details">
-// 								<span className="text">{el.text}</span>
-// 								<br/>
-// 								<span className="weight">{el.weight}</span>
-// 							</div>
-// 						</div>
-// 					))}
-// 				</div>
-// 			</div>
-// 		</div>
-// 	))}
-// </div>
