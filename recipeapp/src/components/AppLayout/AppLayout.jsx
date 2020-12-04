@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Cards from "../cards/cards";
+import React, { useState, useEffect } from "react";
+import Cards from "../Cards/Cards";
 import "./AppLayout.css";
 import Loader from "react-loader-spinner";
 
@@ -42,12 +42,12 @@ const AppLayout = () => {
 		}
 	};
 
-	React.useEffect(() => {
-		const URL = `https://api.edamam.com/search?q=mutton&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=24`;
+	useEffect(() => {
+		const URL = `https://api.edamam.com/search?q=mutton&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=12`;
 
 		fetch(URL)
 			.then((response) => {
-				console.log(response);
+				// console.log(response);
 				return response.json();
 			})
 			.then((result) => {

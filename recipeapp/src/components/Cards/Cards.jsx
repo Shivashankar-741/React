@@ -1,5 +1,6 @@
 import React from "react";
-import "./cards.css";
+import { Link } from "react-router-dom";
+import "./Cards.css";
 
 const Cards = (prop) => {
 	console.log(prop.inputValue);
@@ -19,7 +20,9 @@ const Cards = (prop) => {
 									: el.recipe.label.slice(0, 38) + "...."}
 							</h4>
 							<div className="card_btn">
-								<button>View More</button>
+								<Link to="/ingredients">
+									<button>View More</button>
+								</Link>
 							</div>
 						</div>
 					</div>
