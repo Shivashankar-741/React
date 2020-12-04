@@ -20,7 +20,7 @@ const Cards = (prop) => {
 									: el.recipe.label.slice(0, 38) + "...."}
 							</h4>
 							<div className="card_btn">
-								<Link to="/ingredients">
+								<Link to={{ pathname: "/ingredients", data: el.recipe }}>
 									<button>View More</button>
 								</Link>
 							</div>
