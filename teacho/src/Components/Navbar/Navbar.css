@@ -1,0 +1,90 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+.nav-list {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	margin-right: 10%;
+}
+.logo {
+	display: flex;
+	align-items: center;
+
+	margin-left: 10%;
+}
+.teacho {
+	height: 56px;
+	margin: 0 12.2px 0 0;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: italic;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: left;
+	color: #245b77;
+}
+.logoImgin {
+	width: 50px;
+	height: 35px;
+	object-fit: contain;
+}
+.logoImg {
+	display: flex;
+	align-items: center;
+}
+a {
+	text-decoration: none;
+
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: left;
+	color: #181636;
+}
+li:not(:first-child) {
+	margin-left: 50px;
+}
+li::after {
+	content: "";
+	display: block;
+	width: 0%;
+	height: 0px;
+	transition: 0.8s;
+	background-color: #feb161;
+}
+li:not(:last-child):hover::after {
+	content: "";
+	display: block;
+	width: 100%;
+	transition: width 0.4s;
+	height: 1px;
+	background-color: #feb161;
+}
+.btn {
+	padding: 7px 25px;
+	border: solid 0.5px #245b77;
+	display: inline-block;
+	border-radius: 10px;
+	transition: 0.4s;
+}
+.btn:hover {
+	background-color: #245b77;
+	color: #fff;
+	transform: scaleX(0.96);
+	transition: transform 0.4s;
+}
+
+@media only screen and (max-width: 910px) {
+	.nav-list {
+		display: none;
+	}
+}
