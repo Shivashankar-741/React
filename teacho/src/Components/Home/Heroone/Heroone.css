@@ -1,0 +1,57 @@
+.Heroone {
+	display: flex;
+	margin: 50px 60px;
+}
+.heroImgin {
+	width: 600px;
+	height: 400px;
+}
+
+.learnMore {
+	display: flex;
+	align-items: center;
+}
+.quote {
+	margin: 0;
+}
+.learnMorein {
+	width: 478px;
+	margin-left: 100px;
+}
+
+.quote {
+	font-family: Montserrat;
+	font-size: 60px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: left;
+	color: #245b77;
+}
+.p-tag {
+	margin: 15px 0px;
+
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: left;
+	color: #245b77;
+}
+
+/* .btn-learnMore {
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.67;
+	letter-spacing: normal;
+	text-align: left;
+	color: #245b77;
+} */

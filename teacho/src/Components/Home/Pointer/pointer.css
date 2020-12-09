@@ -1,0 +1,11 @@
+.pointer {
+	width: 20px;
+	height: 20px;
+	background-color: #245b77;
+	border-radius: 50%;
+}
+.pointerIn {
+	color: #ffffff;
+	height: 10px;
+	width: 100px;
+}
