@@ -3,9 +3,19 @@
 	height: 20px;
 	background-color: #245b77;
 	border-radius: 50%;
+	cursor: pointer;
+
+	margin-left: 25px;
+	transition: 0.6s all;
+}
+
+.pointer:hover {
+	transform: translateX(-15px);
+	transition: ease 0.6s all;
 }
 .pointerIn {
 	color: #ffffff;
-	height: 10px;
-	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

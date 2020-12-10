@@ -1,0 +1,12 @@
+.JoinUs {
+	margin: 50px 10px;
+}
+.JoinUs--header {
+	display: flex;
+	justify-content: center;
+}
+
+.JoinUs--cards {
+	display: flex;
+	justify-content: center;
+}

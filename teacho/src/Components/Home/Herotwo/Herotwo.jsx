@@ -1,16 +1,13 @@
 import React from "react";
-import "./Heroone.css";
-import illustration2 from "../../../assets/illustration/Illustration 2.png";
+import "./Herotwo.css";
+import illustration1 from "../../../assets/illustration/Illustration 1.png";
 import Pointer from "../Pointer/Pointer";
-const Heroone = () => {
+const Herotwo = () => {
 	return (
 		<div className="Heroone">
-			<div className="heroImg">
-				<img src={illustration2} alt="" className="heroImgin" />
-			</div>
 			<div className="learnMore">
 				<div className="learnMorein">
-					<h3 className="quote">Teach what you know</h3>
+					<h3 className="quote">Build, Teach and Make!</h3>
 					<p className="p-tag">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
 						molestias distinctio quas repellat totam mollitia ipsam, aliquid
@@ -26,8 +23,11 @@ const Heroone = () => {
 					</div>
 				</div>
 			</div>
+			<div className="heroImg">
+				<img src={illustration1} alt="" className="heroImgin" />
+			</div>
 		</div>
 	);
 };
 
-export default Heroone;
+export default Herotwo;

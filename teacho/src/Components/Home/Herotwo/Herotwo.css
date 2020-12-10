@@ -1,6 +1,6 @@
 .Heroone {
 	display: flex;
-	/* margin: 100px 60px; */
+	margin: 90px 60px;
 }
 .heroImgin {
 	width: 600px;
@@ -16,7 +16,7 @@
 }
 .learnMorein {
 	width: 478px;
-	margin-left: 60px;
+	margin-right: 20px;
 }
 
 .quote {
