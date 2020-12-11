@@ -1,4 +1,7 @@
-.JoinUs--header {
+.Discover {
+	background-color: rgba(201, 183, 183, 0.2);
+}
+.Discover--header {
 	display: flex;
 	justify-content: center;
 
@@ -13,25 +16,28 @@
 	color: #245b77;
 }
 
-.JoinUs--cards {
+.Discover--cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.joinUs--cards__details {
+.Discover--cards__details {
 	width: 220px;
 	margin: 20px 80px;
 }
-
-.JoinUs--svg {
+.Discover--cards__details:hover > .Discover--img {
+	border-radius: 10px;
+	transition: ease 0.4s border-radius;
+}
+.Discover--img {
+	border-radius: 50%;
+	transition: 0.4s all;
 	width: 200px;
 	height: 200px;
-	/* color: #245b77; */
-	fill: red;
 }
 
-.JoinUs--tag {
+.Discover--tag {
 	width: 200px;
 	margin: 5px 0;
 
@@ -42,10 +48,10 @@
 	font-style: normal;
 	line-height: 1.3;
 	letter-spacing: normal;
-	text-align: center;
+	text-align: left;
 	color: #245b77;
 }
-.JoinUs--description {
+.Discover--description {
 	width: 200px;
 
 	font-family: Poppins;
@@ -55,6 +61,6 @@
 	font-style: normal;
 	line-height: 1.5;
 	letter-spacing: normal;
-	text-align: center;
+	text-align: left;
 	color: #3eb4ba;
 }

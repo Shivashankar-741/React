@@ -4,6 +4,7 @@ import Heroone from "../../Components/Home/Heroone/Heroone";
 import Herotwo from "../../Components/Home/Herotwo/Herotwo";
 import Herothree from "../../Components/Home/Herothree/Herothree";
 import JoinUs from "../../Components/Home/JoinUs/JoinUs";
+import Discover from "../../Components/Home/Discover/Discover";
 // import Banner from "../../Components/Home/Banner/Banner";
 
 const Home = () => {
@@ -14,7 +15,8 @@ const Home = () => {
 			<Herotwo />
 			{/* <Banner /> */}
 			<Herothree />
-			<JoinUs/>
+			<JoinUs />
+			<Discover />
 		</>
 	);
 };
