@@ -15,10 +15,12 @@ class Controller extends Component {
 			`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${woeid}`
 		)
 			.then((result) => {
-				// console.log(result);
-				return result.json();
+				console.log(result);
+				return result.JSON();
 			})
 			.then((data) => {
+				console.log(JSON.parse(data));
+
 				if (data.length) {
 					data.forEach((el) => {
 						fetch(

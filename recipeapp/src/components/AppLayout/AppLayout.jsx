@@ -31,12 +31,12 @@ const AppLayout = () => {
 				})
 				.then((result) => {
 					console.log(result);
-					console.log(result.hits);
+
+					// console.log(result.hits);
 					setData(result.hits);
 					setLoading(false);
 				})
 				.catch((err) => {
-					console.log(err);
 					setLoading(false);
 				});
 		}
