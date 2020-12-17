@@ -1,15 +1,10 @@
 import React, { useContext } from "react";
-import { AppContext } from "../../Components/AppContext/AppContext";
+import { useApp } from "../../Components/AppContext/context";
 
 const Body = () => {
-	const value = useContext(AppContext);
+	const [value] = useApp();
 	console.log(value);
 
-	// if (value !== "") {
-	// 	fetch(`https://api.github.com/users/${value}`)
-	// 		.then((res) => res.json())
-	// 		.then((data) => console.log(data));
-	// }
 	return (
 		<div className="body">
 			<h1>Body</h1>

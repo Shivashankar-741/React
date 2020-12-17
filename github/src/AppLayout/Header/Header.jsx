@@ -1,17 +1,19 @@
 import React, { useState } from "react";
+
+import { useApp } from "../../Components/AppContext/context";
 import "./Header.css";
+
 export const Header = () => {
-	const [name, setName] = useState("");
+	const [name, setName] = useApp();
 
 	const changeHandler = (e) => {
-		setName(e.target.value);
+		// setName(e.target.value);
 	};
 
 	const enterPressed = (e) => {
 		let keycode = e.keyCode || e.which;
 		if (keycode === 13 && e.target.value !== "") {
-			console.log(name);
-			setName(name);
+			setName(e.target.value);
 			e.target.value = "";
 		}
 	};
