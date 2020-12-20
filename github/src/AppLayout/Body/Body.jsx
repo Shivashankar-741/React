@@ -1,13 +1,16 @@
-import React, { useContext } from "react";
-import { useApp } from "../../Components/AppContext/context";
+import React, { useState } from "react";
+import { useApp } from "../../Components/AppContext/AppContext";
 
 const Body = () => {
-	const [value] = useApp();
+	// const [data, setData] = useState([]);
+	const [value, setValue] = useApp();
 	console.log(value);
+	fetch(`https://api.github.com/users/${value}`)
+		.then((response) => response.json())
+		.then((result) => console.log(result));
 
 	return (
 		<div className="body">
-			<h1>Body</h1>
 			<h2>{value}</h2>
 		</div>
 	);
