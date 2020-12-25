@@ -12,9 +12,7 @@ const Heroone = () => {
 				<div className="learnMorein">
 					<h3 className="quote">Teach what you know</h3>
 					<p className="p-tag">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-						molestias distinctio quas repellat totam mollitia ipsam, aliquid
-						excepturi quidem dolor.
+						You can make money by teaching with your surrounding people.
 					</p>
 					<div className="btn-container">
 						<div className="btnIn">

@@ -1,0 +1,72 @@
+.contacts {
+	width: 90%;
+	margin: 5% auto;
+	/* background-color: yellowgreen; */
+
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contact--details {
+	width: 400px;
+	/* display: flex;
+	justify-content: flex-end; */
+}
+
+.contact--links {
+	display: flex;
+}
+
+.contact--links__head {
+	margin: 0 30px;
+}
+
+.contact--details__head {
+	margin: 0;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: left;
+	color: #245b77;
+}
+
+.contact--details__para {
+	margin: 0;
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	/* line-height: 2.08; */
+	/* letter-spacing: normal; */
+	/* text-align: left; */
+	color: #3eb4ba;
+}
+
+.contact--links__title {
+	font-family: Montserrat;
+	/* font-size: 40px; */
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	/* line-height: 1.23; */
+	letter-spacing: normal;
+	/* text-align: left; */
+	color: #245b77;
+}
+
+.contact--links__lists {
+	
+	font-family: Poppins;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.46;
+	letter-spacing: normal;
+	text-align: left;
+	color: #3eb4ba;
+}

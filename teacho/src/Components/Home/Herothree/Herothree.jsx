@@ -10,11 +10,9 @@ const Herothree = () => {
 			</div>
 			<div className="learnMore">
 				<div className="learnMorein">
-					<h3 className="quote">Join with 50,000+ creators!</h3>
+					<h3 className="quote">Join with 1000+ creators!</h3>
 					<p className="p-tag">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-						molestias distinctio quas repellat totam mollitia ipsam, aliquid
-						excepturi quidem dolor.
+						Make your content unique and different to attract your users.
 					</p>
 					<div className="btn-container">
 						<div className="btnIn">

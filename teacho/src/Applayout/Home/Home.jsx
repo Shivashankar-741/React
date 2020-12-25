@@ -5,6 +5,8 @@ import Herotwo from "../../Components/Home/Herotwo/Herotwo";
 import Herothree from "../../Components/Home/Herothree/Herothree";
 import JoinUs from "../../Components/Home/JoinUs/JoinUs";
 import Discover from "../../Components/Home/Discover/Discover";
+import Contacts from "../../Components/Home/Contacts/Contacts";
+import Footer from "../../Components/Home/Footer/Footer";
 // import Banner from "../../Components/Home/Banner/Banner";
 
 const Home = () => {
@@ -17,6 +19,8 @@ const Home = () => {
 			<Herothree />
 			<JoinUs />
 			<Discover />
+			<Contacts />
+			<Footer />
 		</>
 	);
 };

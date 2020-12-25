@@ -8,11 +8,7 @@ const Herotwo = () => {
 			<div className="learnMore">
 				<div className="learnMorein">
 					<h3 className="quote">Build, Teach and Make!</h3>
-					<p className="p-tag">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-						molestias distinctio quas repellat totam mollitia ipsam, aliquid
-						excepturi quidem dolor.
-					</p>
+					<p className="p-tag">Create your own brand in Teacho.</p>
 					<div className="btn-container">
 						<div className="btnIn">
 							<a href=" #" className="btn-learnmore">
